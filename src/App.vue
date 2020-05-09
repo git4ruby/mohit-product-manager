@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <div>
+      <b-button>Button</b-button>
+      <b-button variant="danger">Button</b-button>
+      <b-button variant="success">Button</b-button>
+      <b-button variant="outline-primary">Button</b-button>
+    </div>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
