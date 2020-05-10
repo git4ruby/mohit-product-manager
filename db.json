@@ -11,7 +11,7 @@
       "name": "Casual Shoe",
       "price": "$10",
       "brand": "Nike",
-      "inventoryStatus": false,
+      "inventoryStatus": true,
       "id": 2
     }
   ]

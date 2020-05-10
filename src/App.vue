@@ -4,7 +4,7 @@
     <b-container>
       <b-row class="justify-content-center">
         <AddProduct />
-        <ListProduct />
+        <ListProduct :products="productList"/>
       </b-row>
     </b-container>
   </div>
