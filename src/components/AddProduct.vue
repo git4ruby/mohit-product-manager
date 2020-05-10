@@ -44,6 +44,7 @@ export default {
     }
   },
   methods: {
+    /* eslint-disable-no-console */
     addProduct(){
       console.log(this.form)
     }
