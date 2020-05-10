@@ -1,17 +1,10 @@
 {
   "products": [
     {
-      "name": "Sports Shoe",
-      "price": "$200",
-      "brand": "Puma",
-      "inventoryStatus": false,
-      "id": 1
-    },
-    {
       "name": "Casual Shoe",
       "price": "$10",
       "brand": "Nike",
-      "inventoryStatus": true,
+      "inventoryStatus": false,
       "id": 2
     },
     {
@@ -20,6 +13,13 @@
       "brand": "Levis",
       "inventoryStatus": true,
       "id": 3
+    },
+    {
+      "name": "Xbox S",
+      "price": "$399",
+      "brand": "Microsoft",
+      "inventoryStatus": false,
+      "id": 4
     }
   ]
 }

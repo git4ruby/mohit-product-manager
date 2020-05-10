@@ -19,7 +19,7 @@
               <b-button variant="danger" @click="deleteProduct(product.id)"><i class="fas fa-trash"></i></b-button>
             </b-col>
             <b-col>
-              <UpdateProduct :product="product"/>
+              <UpdateProduct :product="product" @updateProduct="updateProduct"/>
             </b-col>
           </b-row>
         </b-card>
@@ -39,6 +39,9 @@ export default {
   methods: {
     deleteProduct(productId){
       this.$emit('deleteProduct',productId)
+    },
+    updateProduct(updatedProduct){
+      this.$emit('updateProduct', updatedProduct)
     }
   }
 }
