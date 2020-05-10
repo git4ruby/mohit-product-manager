@@ -25,5 +25,7 @@ export default {
 </script>
 
 <style>
-
+.error-message{
+  color: crimson;
+}
 </style>
