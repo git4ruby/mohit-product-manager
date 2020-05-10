@@ -19,7 +19,7 @@
               <b-button variant="danger" @click="deleteProduct(product.id)"><i class="fas fa-trash"></i></b-button>
             </b-col>
             <b-col>
-              <b-button><i class="fas fa-edit"></i></b-button>
+              <UpdateProduct />
             </b-col>
           </b-row>
         </b-card>
@@ -29,8 +29,13 @@
 </template>
 
 <script>
+import UpdateProduct from '@/components/UpdateProduct'
+
 export default {
   props: ['products'],
+  components: {
+    UpdateProduct
+  },
   methods: {
     deleteProduct(productId){
       this.$emit('deleteProduct',productId)
