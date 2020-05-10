@@ -11,13 +11,20 @@
           </b-form-group>
           <b-form-group label="Price ($)">
             <b-form-input v-validate="{required: true, numeric: true}" v-model= "form.price" id="price" name= 'price' trim> </b-form-input>
-            {{ errors.first('price') }}
+            <div v-if="submitted" class="error-message">
+              {{ errors.first('price') }}
+            </div>
           </b-form-group>
           <b-form-group label="Brand">
-            <b-form-input v-validate="{required: true}" v-model= "form.brand" id="brand" name= 'brand' trim>
-            </b-form-input>
+            <b-form-input v-validate="{required: true}" v-model= "form.brand" id="brand" name= 'brand' trim></b-form-input>
+            <div v-if="submitted" class="error-message">
+              {{ errors.first('brand') }}
+            </div>
           </b-form-group>
           <b-form-group label="Inventory">
+            <div v-if="submitted" class="error-message">
+              {{ errors.first('inventoryStatus') }}
+            </div>
             <b-form-radio v-validate="{required: true}" v-model= "form.inventoryStatus" name="inventoryStatus" value="true">In Stock</b-form-radio>
             <b-form-radio v-model= "form.inventoryStatus" name="inventoryStatus" value="false">Out of Stock</b-form-radio>
           </b-form-group>
@@ -42,8 +49,10 @@ export default {
   },
   methods: {
     /* eslint-disable-no-console */
-    addProduct(){
-      this.submitted = true;
+    async addProduct(){
+      this.submitted = true
+      let result = await this.$validator.validate()
+      console.log(result)
       console.log(this.form)
     }
   }
