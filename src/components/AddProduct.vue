@@ -42,6 +42,7 @@ export default {
       form: {
         name: '',
         price: '',
+        brand: '',
         inventoryStatus: ''
       },
       submitted: false
@@ -52,6 +53,21 @@ export default {
     async addProduct(){
       this.submitted = true
       let result = await this.$validator.validate()
+      if(result){
+        this.$emit('addProduct', {
+          name: this.form.name,
+          price: '$' + this.form.price,
+          brand: this.form.brand,
+          inventoryStatus: this.form.inventoryStatus === 'true'
+        })
+        this.form = {
+          name: '',
+          price: '',
+          brand: '',
+          inventoryStatus: ''
+        }
+        this.submitted = false
+      }
       console.log(result)
       console.log(this.form)
     }

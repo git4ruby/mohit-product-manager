@@ -13,6 +13,27 @@
       "brand": "Nike",
       "inventoryStatus": true,
       "id": 2
+    },
+    {
+      "name": "Torn Jeans",
+      "price": "$99",
+      "brand": "Levis",
+      "inventoryStatus": true,
+      "id": 3
+    },
+    {
+      "name": "MLB Cap",
+      "price": "$100",
+      "brand": "Under Armor",
+      "inventoryStatus": false,
+      "id": 4
+    },
+    {
+      "name": "NFL Ball",
+      "price": "$500",
+      "brand": "Ball",
+      "inventoryStatus": true,
+      "id": 5
     }
   ]
 }
