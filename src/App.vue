@@ -1,16 +1,25 @@
 <template>
   <div id="app">
     <AppHeader />
-    <h1>Welcome to Vue JS</h1>
+    <b-container>
+      <b-row class="justify-content-center">
+        <AddProduct />
+        <ListProduct />
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader'
+import ListProduct from '@/components/ListProduct'
+import AddProduct from '@/components/AddProduct'
 export default {
   name: 'App',
   components: {
-    AppHeader
+    AppHeader,
+    AddProduct,
+    ListProduct
   }
 }
 </script>
