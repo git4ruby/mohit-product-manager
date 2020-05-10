@@ -1,6 +1,6 @@
 <template>
   <b-col md="4" class="m-3">
-    <b-card header="AddProduct">
+    <b-card header="Add Product">
       <b-card-body>
         <b-form autocomplete="off">
           <b-form-group label="Name">

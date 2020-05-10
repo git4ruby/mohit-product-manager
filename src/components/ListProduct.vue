@@ -19,7 +19,7 @@
               <b-button variant="danger" @click="deleteProduct(product.id)"><i class="fas fa-trash"></i></b-button>
             </b-col>
             <b-col>
-              <UpdateProduct />
+              <UpdateProduct :product="product"/>
             </b-col>
           </b-row>
         </b-card>
