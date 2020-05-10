@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "name": "Sports Shoe",
+      "price": "$200",
+      "brand": "Puma",
+      "inventoryStatus": false,
+      "id": 1
+    },
+    {
+      "name": "Casual Shoe",
+      "price": "$10",
+      "brand": "Nike",
+      "inventoryStatus": false,
+      "id": 2
+    }
+  ]
+}
